@@ -1,0 +1,294 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #2d2d2d);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ffd700;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd700;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #ddd;
+}
+
+/* Seasons */
+.seasons {
+  padding: 80px 20px;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #ffd700;
+  margin-bottom: 40px;
+}
+
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.season-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.season-card:hover {
+  transform: scale(1.05);
+}
+
+.season-cover {
+  position: relative;
+  height: 400px;
+  background-image: url('season 1.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.season-cover.season-2 {
+  background-image: url('season 2.png');
+}
+
+.season-cover.season-3 {
+  background-image: url('season 3.png');
+}
+
+.season-cover.season-4 {
+  background-image: url('season 4.png');
+}
+
+.season-cover.season-5 {
+  background-image: url('season 5.png');
+}
+
+.season-cover.season-6 {
+  background-image: url('season 6.png');
+}
+
+.season-cover.season-7 {
+  background-image: url('season 7.png');
+}
+
+.season-cover.season-8 {
+  background-image: url('season 8.png');
+}
+
+.season-cover.season-9 {
+  background-image: url('season 9.png');
+}
+
+.season-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.8);
+}
+
+.season-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 40px 20px 20px;
+  color: white;
+}
+
+.season-overlay h4 {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+}
+
+.season-overlay p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.season-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.season-card:hover .season-hover {
+  opacity: 1;
+}
+
+.season-hover h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.season-hover a {
+  color: #ffd700;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.season-hover a:hover {
+  color: #b8860b;
+}
+
+/* About */
+.about {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+  color: #e5e5e5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ffd700;
+  color: #bbb;
+}
+
+/* Season Page Styles */
+.season-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(139, 0, 0, 0.2), rgba(75, 0, 130, 0.1));
+}
+
+.season-title {
+  font-size: 42px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.season-subtitle {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  background: #ffd700;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #b8860b;
+}
+
+.outfits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.outfit-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.outfit-card h4 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.outfit-placeholder {
+  height: 200px;
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.3), rgba(139, 0, 0, 0.3), rgba(75, 0, 130, 0.2));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #ddd;
+  font-style: italic;
+}
+
+.outfit-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
